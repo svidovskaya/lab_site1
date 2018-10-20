@@ -118,8 +118,5 @@ footer{
 }
 .copyright{
     position: relative;
-    top: 65px;
-    left: 45%;
-    margin-right: -45%;
-    transform: translate(-50%, -50%)
+    margin: 0 45%;
 }
