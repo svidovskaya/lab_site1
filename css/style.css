@@ -5,6 +5,8 @@
   }
 .wrap{
     position: relative;
+    min-height: 100%;
+    padding-bottom: 90px;
 }
 header{
     background: #dedede;
