@@ -1,16 +1,9 @@
 *{
     margin:0;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*св-ва width, height включает в себя знач. полей и границ, но не отступов (margin)*/
   }
-.wrap{
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 90px;
-}
-.wrapper{
-    margin: 0 55px;
-}
+
 header{
     background: #dedede;
     position: relative;
@@ -40,7 +33,7 @@ header nav li{
     margin: -3px;
 }
 header nav li a{
-    text-decoration: none;
+    text-decoration: none; /* без подчёркивания*/
     color: white;
 }
 header nav li:hover{
@@ -49,18 +42,18 @@ header nav li:hover{
     background: rgb(199, 7, 7);
 }
 main{
-    padding-bottom: 70px;
-    margin: 15px 0;
+    padding-bottom: 20px;
+    margin: 15px 55px;
 }
 .content{
     background: #cecece;
     width: 1200px;
     width: 100%;
-    padding: 15px 15px;
+    padding: 15px;
 }
 .text{
     line-height: 30px;
-    text-align:justify;
+    text-align:justify; /*растянуть*/
 }
 .first {
     float: left;
@@ -116,4 +109,26 @@ footer{
 .copyright{
     position: relative;
     margin: 0 49%;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.wrap {
+  padding-bottom: 156px;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+@media(max-width: 700px){
+    .first, .second{
+        transform: rotate(180deg)
+    }
 }
